@@ -55,9 +55,11 @@ def upload_file():
         x = str(x)
     
     # return redirect(url_for('show_iqa', iqa_scores))
-    mouse_over_text = [text_s1[iqa_scores[0]-1], text_s2[iqa_scores[1]-1], text_s3[iqa_scores[2]-1], text_s4[iqa_scores[3]-1]]
-    return render_template('result.html', s = iqa_scores, text_s = mouse_over_text)
+    # mouse_over_text = [text_s1[iqa_scores[0]-1], text_s2[iqa_scores[1]-1], text_s3[iqa_scores[2]-1], text_s4[iqa_scores[3]-1]]
+    return render_template('result.html', s = iqa_scores)
     # return render_template('test2.html')
     # dictToSend = {'iqa_scores': iqa_scores}
     # requests.post('http://localhost:5000/show_IQA', json=dictToSend)
 
+if __name__ == "__main__":
+    app.run()

@@ -10,7 +10,9 @@
     #MyTable td{
         border: 1px solid black;
         padding: 3px;
+        font-size: 15px;
     }
+
     .parentCell{
         position: relative;
     }
@@ -40,6 +42,7 @@
 </head>
 <body>
   <h1>IQA Scores (Hover over each score for the description)</h1>
+  <h2>Higher is better</h2>
   <table id="MyTable">
   <thead>
     <tr>
@@ -48,87 +51,27 @@
     </tr>
   </thead>
   <tbody>
-        <!-- 
     <tr>
       <td>Teacher connects student's contribution to each other</td>
-      <td class="parentCell">{{s[0]}}
-        <span class="tooltip">{{text_s[0]}}</span>
-      </td>
-      </td>
+      <td onmouseover="nhpup.popup($('#hidden-table').html(), {'width': 600}, '0', {{s[0]}});">{{s[0]}}</td>
     </tr>
     <tr>
       <td>Teacher presses students to support their claims</td>
-      <td class="parentCell">{{s[1]}}
-        <span class="tooltip">{{text_s[1]}}</span>
-      </td>
-      </td>
+      <td onmouseover="nhpup.popup($('#hidden-table').html(), {'width': 600}, '1', {{s[1]}});">{{s[1]}}</td>
     </tr>
     <tr>
       <td>Students build on each other’s contribution</td>
-      <td class="parentCell">{{s[2]}}
-        <span class="tooltip">{{text_s[2]}}</span>
-      </td>
-      </td>
-    </tr>
-
-    <tr>
-      <td>Students support their claims and reasoning with evidence</td>
-      <td class="parentCell">{{s[3]}}
-        <span class="tooltip">{{text_s[3]}}</span>
-      </td>
-      </td>
-    </tr>
-    -->
-    <tr>
-      <td>Teacher connects student's contribution to each other</td>
-      <td onmouseover="nhpup.popup($('#hidden-table').html(), {'width': 400}, '0', {{s[0]}});">{{s[0]}}</td>
-    </tr>
-    <tr>
-      <td>Teacher presses students to support their claims</td>
-      <td onmouseover="nhpup.popup($('#hidden-table').html(), {'width': 400}, '1', {{s[1]}});">{{s[1]}}</td>
-    </tr>
-    <tr>
-      <td>Students build on each other’s contribution</td>
-      <td onmouseover="nhpup.popup($('#hidden-table').html(), {'width': 400}, '2', {{s[2]}});">{{s[2]}}</td>
+      <td onmouseover="nhpup.popup($('#hidden-table').html(), {'width': 600}, '2', {{s[2]}});">{{s[2]}}</td>
     </tr>        
     <tr>
       <td>Students support their claims and reasoning with evidence</td>
-      <td onmouseover="nhpup.popup($('#hidden-table').html(), {'width': 400}, '3', {{s[3]}});">{{s[3]}}</td>
+      <td onmouseover="nhpup.popup($('#hidden-table').html(), {'width': 600}, '3', {{s[3]}});">{{s[3]}}</td>
     </tr>
   </tbody>
   </table>
 
-  <div style="display:none;" id="hidden-table-02">
-        <table width="400" border="1">
-          <thead>
-            <tr>
-              <td>Score</td>
-              <td>Description</td>
-            </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <th>1</th>
-                  <th>Teacher does not make any effort to link student contributions.</th>
-              </tr>
-              <tr bgcolor="#151A7B"  style="color:white;">
-                  <th>2</th>
-                  <th>Teacher repeats student contributions but does not show how ideas/positions relate to each other. OR 1 time, the teacher connects student contributions to each other and shows how ideas/ positions shared during the discussion relate to teach other</th>
-              </tr>
-              <tr>
-                  <th>3</th>
-                  <th>2 times, the teacher connects student contributions to each other and shows how ideas/ positions shared during the discussion relate to teach other.</th>
-              </tr>
-              <tr>
-                  <th>4</th>
-                  <th>3+ times, teacher connects student contributions to each other and shows how ideas/ positions shared during the discussion relate to teach other.</th>
-              </tr>
-
-          </tbody>
-      </table>
-
   <div style="display:none;" id="hidden-table-01">
-        <table width="400" border="1">
+        <table width="600" border="1">
           <thead>
             <tr>
               <td>Score</td>
@@ -157,7 +100,7 @@
       </table>
 
   <div style="display:none;" id="hidden-table-02">
-        <table width="400" border="1">
+        <table width="600" border="1">
           <thead>
             <tr>
               <td>Score</td>
@@ -186,7 +129,7 @@
       </table>
 
   <div style="display:none;" id="hidden-table-03">
-        <table width="400" border="1">
+        <table width="600" border="1">
           <thead>
             <tr>
               <td>Score</td>
@@ -215,7 +158,7 @@
       </table>
 
   <div style="display:none;" id="hidden-table-04">
-        <table width="400" border="1">
+        <table width="600" border="1">
           <thead>
             <tr>
               <td>Score</td>
@@ -244,7 +187,7 @@
       </table>
 
   <div style="display:none;" id="hidden-table-11">
-        <table width="400" border="1">
+        <table width="600" border="1">
           <thead>
             <tr>
               <td>Score</td>
@@ -271,5 +214,324 @@
 
           </tbody>
       </table>
+
+  <div style="display:none;" id="hidden-table-12">
+      <table width="600" border="1">
+        <thead>
+          <tr>
+            <td>Score</td>
+            <td>Description</td>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <th>Teacher does not ask students to provide evidence for their contributions or explain their reasoning.</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Teacher makes superficial or formulaic efforts to ask students to provide evidence for their contributions and/or explain their reasoning. OR 1 time, the teacher asks students to provide evidence for their contributions and/or explain their reasoning.</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>2 times, the teacher asks Ss to provide evidence for their contributions and/or explain their reasoning.</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>3+ times, the teacher asks students to provide evidence for their contributions and/or to explain their reasoning.</th>
+            </tr>
+
+        </tbody>
+    </table>
+
+  <div style="display:none;" id="hidden-table-13">
+      <table width="600" border="1">
+        <thead>
+          <tr>
+            <td>Score</td>
+            <td>Description</td>
+          </tr>
+        </thead>
+        <tbody>
+            <tr bgcolor="#151A7B"  style="color:white;">
+                <th>1</th>
+                <th>Teacher does not ask students to provide evidence for their contributions or explain their reasoning.</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Teacher makes superficial or formulaic efforts to ask students to provide evidence for their contributions and/or explain their reasoning. OR 1 time, the teacher asks students to provide evidence for their contributions and/or explain their reasoning.</th>
+            </tr>
+            <tr bgcolor="#151A7B"  style="color:white;">
+                <th>3</th>
+                <th>2 times, the teacher asks Ss to provide evidence for their contributions and/or explain their reasoning.</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>3+ times, the teacher asks students to provide evidence for their contributions and/or to explain their reasoning.</th>
+            </tr>
+
+        </tbody>
+      </table>
+
+  <div style="display:none;" id="hidden-table-14">
+    <table width="600" border="1">
+      <thead>
+        <tr>
+          <td>Score</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th>1</th>
+              <th>Teacher does not ask students to provide evidence for their contributions or explain their reasoning.</th>
+          </tr>
+          <tr>
+              <th>2</th>
+              <th>Teacher makes superficial or formulaic efforts to ask students to provide evidence for their contributions and/or explain their reasoning. OR 1 time, the teacher asks students to provide evidence for their contributions and/or explain their reasoning.</th>
+          </tr>
+          <tr>
+              <th>3</th>
+              <th>2 times, the teacher asks Ss to provide evidence for their contributions and/or explain their reasoning.</th>
+          </tr>
+          <tr bgcolor="#151A7B"  style="color:white;">
+              <th>4</th>
+              <th>3+ times, the teacher asks students to provide evidence for their contributions and/or to explain their reasoning.</th>
+          </tr>
+
+      </tbody>
+    </table>
+
+  <div style="display:none;" id="hidden-table-21">
+    <table width="600" border="1">
+      <thead>
+        <tr>
+          <td>Score</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tbody>
+          <tr bgcolor="#151A7B"  style="color:white;">
+              <th>1</th>
+              <th>Students do not link to each other’s contributions</th>
+          </tr>
+          <tr>
+              <th>2</th>
+              <th>Students link contributions to each other in a superficial way, (e.g., ‘I agree with Maria’). OR 1 time, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+          <tr>
+              <th>3</th>
+              <th>2 times, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+          <tr>
+              <th>4</th>
+              <th>3+ times, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+
+      </tbody>
+    </table>
+
+  <div style="display:none;" id="hidden-table-22">
+    <table width="600" border="1">
+      <thead>
+        <tr>
+          <td>Score</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th>1</th>
+              <th>Students do not link to each other’s contributions</th>
+          </tr>
+          <tr bgcolor="#151A7B"  style="color:white;">
+              <th>2</th>
+              <th>Students link contributions to each other in a superficial way, (e.g., ‘I agree with Maria’). OR 1 time, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+          <tr>
+              <th>3</th>
+              <th>2 times, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+          <tr>
+              <th>4</th>
+              <th>3+ times, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+
+      </tbody>
+    </table>
+
+  <div style="display:none;" id="hidden-table-23">
+    <table width="600" border="1">
+      <thead>
+        <tr>
+          <td>Score</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th>1</th>
+              <th>Students do not link to each other’s contributions</th>
+          </tr>
+          <tr>
+              <th>2</th>
+              <th>Students link contributions to each other in a superficial way, (e.g., ‘I agree with Maria’). OR 1 time, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+          <tr bgcolor="#151A7B"  style="color:white;">
+              <th>3</th>
+              <th>2 times, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+          <tr>
+              <th>4</th>
+              <th>3+ times, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+
+      </tbody>
+    </table>
+
+  <div style="display:none;" id="hidden-table-24">
+    <table width="600" border="1">
+      <thead>
+        <tr>
+          <td>Score</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th>1</th>
+              <th>Students do not link to each other’s contributions</th>
+          </tr>
+          <tr>
+              <th>2</th>
+              <th>Students link contributions to each other in a superficial way, (e.g., ‘I agree with Maria’). OR 1 time, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+          <tr>
+              <th>3</th>
+              <th>2 times, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+          <tr bgcolor="#151A7B"  style="color:white;">
+              <th>4</th>
+              <th>3+ times, the students connect their contributions to each other and show how ideas/positions shared during the discussion relate to each other.</th>
+          </tr>
+
+      </tbody>
+    </table>
+
+  <div style="display:none;" id="hidden-table-31">
+    <table width="600" border="1">
+      <thead>
+        <tr>
+          <td>Score</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tbody>
+          <tr bgcolor="#151A7B"  style="color:white;">
+              <th>1</th>
+              <th>Students do not support their claims and reasoning with evidence (e.g., provide short 1-2 word responses).</th>
+          </tr>
+          <tr>
+              <th>2</th>
+              <th>Students provide superficial support for their claims and reasons. OR 1 time, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+          <tr>
+              <th>3</th>
+              <th>2 times, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+          <tr>
+              <th>4</th>
+              <th>3+ times, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+
+      </tbody>
+    </table>
+
+  <div style="display:none;" id="hidden-table-32">
+    <table width="600" border="1">
+      <thead>
+        <tr>
+          <td>Score</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th>1</th>
+              <th>Students do not support their claims and reasoning with evidence (e.g., provide short 1-2 word responses).</th>
+          </tr>
+          <tr bgcolor="#151A7B"  style="color:white;">
+              <th>2</th>
+              <th>Students provide superficial support for their claims and reasons. OR 1 time, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+          <tr>
+              <th>3</th>
+              <th>2 times, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+          <tr>
+              <th>4</th>
+              <th>3+ times, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+
+      </tbody>
+    </table>
+
+  <div style="display:none;" id="hidden-table-33">
+    <table width="600" border="1">
+      <thead>
+        <tr>
+          <td>Score</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th>1</th>
+              <th>Students do not support their claims and reasoning with evidence (e.g., provide short 1-2 word responses).</th>
+          </tr>
+          <tr>
+              <th>2</th>
+              <th>Students provide superficial support for their claims and reasons. OR 1 time, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+          <tr bgcolor="#151A7B"  style="color:white;">
+              <th>3</th>
+              <th>2 times, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+          <tr>
+              <th>4</th>
+              <th>3+ times, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+
+      </tbody>
+    </table>
+
+  <div style="display:none;" id="hidden-table-34">
+    <table width="600" border="1">
+      <thead>
+        <tr>
+          <td>Score</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th>1</th>
+              <th>Students do not support their claims and reasoning with evidence (e.g., provide short 1-2 word responses).</th>
+          </tr>
+          <tr>
+              <th>2</th>
+              <th>Students provide superficial support for their claims and reasons. OR 1 time, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+          <tr>
+              <th>3</th>
+              <th>2 times, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+          <tr bgcolor="#151A7B"  style="color:white;">
+              <th>4</th>
+              <th>3+ times, students support their claims and reasoning with specific evidence.</th>
+          </tr>
+
+      </tbody>
+    </table>
 </body>
 </html>

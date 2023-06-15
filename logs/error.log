@@ -1,0 +1,42 @@
+[Thu Jun 15 00:49:14.134417 2023] [authz_core:error] [pid 2606655:tid 139741836068608] [client 136.142.46.151:53404] AH01630: client denied by server configuration: /home/nlt26/teachtalk/app.wsgi
+[Thu Jun 15 00:49:23.887142 2023] [authz_core:error] [pid 2606655:tid 139741810890496] [client 136.142.46.151:55746] AH01630: client denied by server configuration: /home/nlt26/teachtalk/app.wsgi, referer: http://136.142.46.161/
+[Thu Jun 15 01:06:42.116923 2023] [wsgi:error] [pid 2607476:tid 139741919000320] [remote 136.142.46.151:43418] mod_wsgi (pid=2607476): Failed to exec Python script file '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:06:42.116979 2023] [wsgi:error] [pid 2607476:tid 139741919000320] [remote 136.142.46.151:43418] mod_wsgi (pid=2607476): Exception occurred processing WSGI script '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:06:42.122580 2023] [wsgi:error] [pid 2607476:tid 139741919000320] [remote 136.142.46.151:43418] Traceback (most recent call last):
+[Thu Jun 15 01:06:42.122621 2023] [wsgi:error] [pid 2607476:tid 139741919000320] [remote 136.142.46.151:43418]   File "/var/www/teachtalk/app.wsgi", line 7, in <module>
+[Thu Jun 15 01:06:42.122627 2023] [wsgi:error] [pid 2607476:tid 139741919000320] [remote 136.142.46.151:43418]     with open(activate_this) as file_:
+[Thu Jun 15 01:06:42.122643 2023] [wsgi:error] [pid 2607476:tid 139741919000320] [remote 136.142.46.151:43418] PermissionError: [Errno 13] Permission denied: '/home/nlt26/.local/share/virtualenvs/teachtalk--zYrc43y'
+[Thu Jun 15 01:25:36.598350 2023] [wsgi:error] [pid 2608073:tid 139741919000320] [remote 136.142.46.151:50554] mod_wsgi (pid=2608073): Failed to exec Python script file '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:25:36.598410 2023] [wsgi:error] [pid 2608073:tid 139741919000320] [remote 136.142.46.151:50554] mod_wsgi (pid=2608073): Exception occurred processing WSGI script '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:25:36.602906 2023] [wsgi:error] [pid 2608073:tid 139741919000320] [remote 136.142.46.151:50554] Traceback (most recent call last):
+[Thu Jun 15 01:25:36.602940 2023] [wsgi:error] [pid 2608073:tid 139741919000320] [remote 136.142.46.151:50554]   File "/var/www/teachtalk/app.wsgi", line 7, in <module>
+[Thu Jun 15 01:25:36.602946 2023] [wsgi:error] [pid 2608073:tid 139741919000320] [remote 136.142.46.151:50554]     with open(activate_this) as file_:
+[Thu Jun 15 01:25:36.602962 2023] [wsgi:error] [pid 2608073:tid 139741919000320] [remote 136.142.46.151:50554] PermissionError: [Errno 13] Permission denied: '/home/nlt26/.local/share/virtualenvs/teachtalk--zYrc43y'
+[Thu Jun 15 01:28:27.408314 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:55324] mod_wsgi (pid=2608217): Failed to exec Python script file '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:28:27.408372 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:55324] mod_wsgi (pid=2608217): Exception occurred processing WSGI script '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:28:27.412844 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:55324] Traceback (most recent call last):
+[Thu Jun 15 01:28:27.412880 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:55324]   File "/var/www/teachtalk/app.wsgi", line 7, in <module>
+[Thu Jun 15 01:28:27.412886 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:55324]     with open(activate_this) as file_:
+[Thu Jun 15 01:28:27.412909 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:55324] IsADirectoryError: [Errno 21] Is a directory: '/home/nlt26/.local/share/virtualenvs/teachtalk--zYrc43y'
+[Thu Jun 15 01:28:35.041683 2023] [wsgi:error] [pid 2608217:tid 139741952571136] [remote 136.142.46.151:55340] mod_wsgi (pid=2608217): Failed to exec Python script file '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:28:35.041754 2023] [wsgi:error] [pid 2608217:tid 139741952571136] [remote 136.142.46.151:55340] mod_wsgi (pid=2608217): Exception occurred processing WSGI script '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:28:35.041898 2023] [wsgi:error] [pid 2608217:tid 139741952571136] [remote 136.142.46.151:55340] Traceback (most recent call last):
+[Thu Jun 15 01:28:35.041938 2023] [wsgi:error] [pid 2608217:tid 139741952571136] [remote 136.142.46.151:55340]   File "/var/www/teachtalk/app.wsgi", line 7, in <module>
+[Thu Jun 15 01:28:35.041946 2023] [wsgi:error] [pid 2608217:tid 139741952571136] [remote 136.142.46.151:55340]     with open(activate_this) as file_:
+[Thu Jun 15 01:28:35.041969 2023] [wsgi:error] [pid 2608217:tid 139741952571136] [remote 136.142.46.151:55340] IsADirectoryError: [Errno 21] Is a directory: '/home/nlt26/.local/share/virtualenvs/teachtalk--zYrc43y'
+[Thu Jun 15 01:31:26.214484 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:58258] mod_wsgi (pid=2608217): Failed to exec Python script file '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:31:26.214538 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:58258] mod_wsgi (pid=2608217): Exception occurred processing WSGI script '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:31:26.214632 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:58258] Traceback (most recent call last):
+[Thu Jun 15 01:31:26.214655 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:58258]   File "/var/www/teachtalk/app.wsgi", line 7, in <module>
+[Thu Jun 15 01:31:26.214661 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:58258]     with open(activate_this) as file_:
+[Thu Jun 15 01:31:26.214676 2023] [wsgi:error] [pid 2608217:tid 139741919000320] [remote 136.142.46.151:58258] IsADirectoryError: [Errno 21] Is a directory: '/home/nlt26/.local/share/virtualenvs/teachtalk--zYrc43y'
+[Thu Jun 15 01:42:43.524683 2023] [wsgi:error] [pid 2608985:tid 139741919000320] [remote 136.142.46.151:44108] mod_wsgi (pid=2608985): Failed to exec Python script file '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:42:43.524776 2023] [wsgi:error] [pid 2608985:tid 139741919000320] [remote 136.142.46.151:44108] mod_wsgi (pid=2608985): Exception occurred processing WSGI script '/var/www/teachtalk/app.wsgi'.
+[Thu Jun 15 01:42:43.531708 2023] [wsgi:error] [pid 2608985:tid 139741919000320] [remote 136.142.46.151:44108] Traceback (most recent call last):
+[Thu Jun 15 01:42:43.531761 2023] [wsgi:error] [pid 2608985:tid 139741919000320] [remote 136.142.46.151:44108]   File "/var/www/teachtalk/app.wsgi", line 8, in <module>
+[Thu Jun 15 01:42:43.531770 2023] [wsgi:error] [pid 2608985:tid 139741919000320] [remote 136.142.46.151:44108]     exect(file_.read(), dict(__file__=activate_this))
+[Thu Jun 15 01:42:43.531795 2023] [wsgi:error] [pid 2608985:tid 139741919000320] [remote 136.142.46.151:44108] NameError: name 'exect' is not defined
+[Thu Jun 15 03:04:16.681010 2023] [ssl:warn] [pid 2612581:tid 139889300675648] AH01906: 136.142.46.161:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu Jun 15 03:04:16.681031 2023] [ssl:warn] [pid 2612581:tid 139889300675648] AH01909: 136.142.46.161:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Jun 15 03:12:29.939066 2023] [ssl:warn] [pid 2612581:tid 139889300675648] AH01906: 136.142.46.161:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu Jun 15 03:14:06.325896 2023] [ssl:warn] [pid 2612581:tid 139889300675648] AH01906: 136.142.46.161:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
